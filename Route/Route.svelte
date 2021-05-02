@@ -9,6 +9,7 @@
 </script>
 
 {#if activeRoute.path === path}
-  <svelte:component this="{component}" />
-  <slot />
+<slot />
+  <svelte:component this={component} />
+  
 {/if}
